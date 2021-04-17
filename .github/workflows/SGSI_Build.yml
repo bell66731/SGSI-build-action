@@ -7,11 +7,11 @@ on:
     types: [started]
     
 env:              
-  ROM_URL: https://dl.google.com/developers/android/sc/images/ota/redfin-ota-spp2.210219.008-3d61e529.zip
-  ZIP_NAME: test.zip
-  OS_TYPE: Pixel
+  ROM_URL: https://bigota.d.miui.com/21.4.14/miui_CEPHEUS_21.4.14_0f09757d74_11.0.zip
+  ZIP_NAME: miui_CEPHEUS_21.4.14_0f09757d74_11.0.zip
+  OS_TYPE: miui
   BUILD_TYPE: 'ab'
-  REPACK_NAME: test_action.zip
+  REPACK_NAME: MI9_miui_21.4.14_XiaoxinSGSIs.zip
   VERSION: 12
   upload_WeTransfer: 'true'
   upload_action-gh-release: 'false'
