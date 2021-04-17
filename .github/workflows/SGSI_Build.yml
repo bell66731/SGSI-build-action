@@ -9,7 +9,7 @@ on:
 env:              
   ROM_URL: https://bigota.d.miui.com/21.4.14/miui_CEPHEUS_21.4.14_0f09757d74_11.0.zip
   ZIP_NAME: miui_21.4.14.zip
-  OS_TYPE: miui
+  OS_TYPE: Pixel
   BUILD_TYPE: 'ab'
   REPACK_NAME: 1.zip
   VERSION: 12
