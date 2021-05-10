@@ -7,11 +7,11 @@ on:
     types: [started]
     
 env:              
-  ROM_URL: https://bigota.d.miui.com/21.4.14/miui_CEPHEUS_21.4.14_0f09757d74_11.0.zip
-  ZIP_NAME: miui_CEPHEUS_21.4.14_0f09757d74_11.0.zip
-  OS_TYPE: miui
+  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/meizu18_Pro/9.0.1.1/cn/20210425155924/573cc645/update.zip
+  ZIP_NAME: flyme.zip
+  OS_TYPE: flyme
   BUILD_TYPE: 'ab'
-  REPACK_NAME: test_action.zip
+  REPACK_NAME: flyme_SGSI.zip
   VERSION: 11
   upload_WeTransfer: 'true'
   upload_action-gh-release: 'false'
@@ -37,8 +37,8 @@ jobs:
        - name: Download zip...
          run: |
             cd $GITHUB_WORKSPACE/SGSI-build-tool
-            mkdir ./tmp
-            cd ./tmp
+            mkdir mp
+            cd tmp
             sudo wget $ROM_URL -O $ZIP_NAME && ls
             
        - name: Setup Tool Utils...
